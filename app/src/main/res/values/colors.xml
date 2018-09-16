@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#171717</color>
+	<color name="colorPrimaryDark">#616161</color>
+	<color name="colorAccent">#b71c1c</color>
+	<color name="divider">#616161</color>
+	<color name="scrim">#0097a7</color>
+
+	<color name="cardBackground">#ceeefc</color>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+	<string name="app_name">Music Player</string>
+	<string name="title_detail">Track Details</string>
+	<string name="title_main">Trending Tracks</string>
+	<string name="transitionImage">transitionImage</string>
+	<string name="transitionDescription">transitionDescription</string>
+	<string name="error_message">Something went wrong. Try Again?</string>
+	<string name="yes">yes</string>
+	<string name="search">Search</string>
+	<string name="hint_artist_name">enter artist name</string>
+</resources>

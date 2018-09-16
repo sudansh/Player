@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+
+		<variable
+			name="data"
+			type="com.sudansh.player.repository.local.db.entity.Track" />
+	</data>
+
+	<android.support.constraint.ConstraintLayout
+		android:id="@+id/mainContainer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/default_padding">
+
+		<ImageView
+			android:id="@+id/image"
+			android:layout_width="@dimen/image_size"
+			android:layout_height="0dp"
+			app:imageUrl="@{data.thumb}"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintDimensionRatio="1"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:src="@tools:sample/avatars" />
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/default_padding"
+			android:ellipsize="end"
+			android:maxLines="2"
+			android:text="@{data.title}"
+			android:textSize="20sp"
+			app:layout_constraintBottom_toTopOf="@id/duration"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/image"
+			app:layout_constraintTop_toTopOf="@+id/image"
+			tools:text="@tools:sample/lorem/random" />
+
+		<TextView
+			android:id="@+id/duration"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/default_padding"
+			android:text="@{data.time}"
+			app:layout_constraintBottom_toBottomOf="@id/image"
+			app:layout_constraintStart_toEndOf="@+id/image"
+			app:layout_constraintTop_toBottomOf="@id/title"
+			tools:text="@tools:sample/date/hhmm" />
+
+	</android.support.constraint.ConstraintLayout>
+
+</layout>
